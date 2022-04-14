@@ -19,17 +19,9 @@ struct ContentView: View {
             Text("\(count.value)")
                 .padding()
             Spacer()
-            HStack {
-                Spacer()
-                Button(action: { count.value -= 1 }) {
-                    Text("Decrement")
-                }
-                Spacer()
-                Button(action: { count.value += 1 }) {
-                    Text("Increment")
-                }
-                Spacer()
+            Stepper(value: $count.value) {
             }
+            .labelsHidden()
             Spacer()
         }
         .font(.title2)
