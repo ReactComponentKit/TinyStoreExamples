@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "tinystore",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:ReactComponentKit/TinyStore.git",
+      "state" : {
+        "revision" : "37608f78a0189ea82f2932de6acf3268fe037223",
+        "version" : "0.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}
