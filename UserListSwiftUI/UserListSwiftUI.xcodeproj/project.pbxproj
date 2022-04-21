@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E578BE12811717800F35067 /* UserListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E578BDE2811717800F35067 /* UserListAPI.swift */; };
+		4E578BE22811717800F35067 /* PostAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E578BDF2811717800F35067 /* PostAPIs.swift */; };
+		4E578BE32811717800F35067 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E578BE02811717800F35067 /* AppStore.swift */; };
+		4E578BE6281171A400F35067 /* TinyStore in Frameworks */ = {isa = PBXBuildFile; productRef = 4E578BE5281171A400F35067 /* TinyStore */; };
 		4EB511AA280C5F2D00BF670D /* UserListSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB511A9280C5F2D00BF670D /* UserListSwiftUIApp.swift */; };
 		4EB511AC280C5F2D00BF670D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB511AB280C5F2D00BF670D /* ContentView.swift */; };
 		4EB511AE280C5F2E00BF670D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB511AD280C5F2E00BF670D /* Assets.xcassets */; };
 		4EB511B1280C5F2E00BF670D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB511B0280C5F2E00BF670D /* Preview Assets.xcassets */; };
-		4EB511B8280C5F4300BF670D /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB511B7280C5F4300BF670D /* AppStore.swift */; };
-		4EB511BB280C5F7700BF670D /* TinyStore in Frameworks */ = {isa = PBXBuildFile; productRef = 4EB511BA280C5F7700BF670D /* TinyStore */; };
-		4EB511BD280C5F8E00BF670D /* UserListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB511BC280C5F8E00BF670D /* UserListAPI.swift */; };
-		4EB511BF280C5F9200BF670D /* PostAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB511BE280C5F9200BF670D /* PostAPIs.swift */; };
 		4EF7786D28100151004A9D0D /* PostDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7786C28100151004A9D0D /* PostDetail.swift */; };
 		4EF7786F281003BE004A9D0D /* PostListForUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7786E281003BE004A9D0D /* PostListForUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E578BDE2811717800F35067 /* UserListAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListAPI.swift; sourceTree = "<group>"; };
+		4E578BDF2811717800F35067 /* PostAPIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostAPIs.swift; sourceTree = "<group>"; };
+		4E578BE02811717800F35067 /* AppStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
 		4EB511A6280C5F2D00BF670D /* UserListSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserListSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB511A9280C5F2D00BF670D /* UserListSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListSwiftUIApp.swift; sourceTree = "<group>"; };
 		4EB511AB280C5F2D00BF670D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EB511AD280C5F2E00BF670D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EB511B0280C5F2E00BF670D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4EB511B7280C5F4300BF670D /* AppStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppStore.swift; path = ../../UserListUIKit/UserListUIKit/AppStore.swift; sourceTree = "<group>"; };
-		4EB511BC280C5F8E00BF670D /* UserListAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserListAPI.swift; path = ../../UserListUIKit/UserListUIKit/UserListAPI.swift; sourceTree = "<group>"; };
-		4EB511BE280C5F9200BF670D /* PostAPIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostAPIs.swift; path = ../../UserListUIKit/UserListUIKit/PostAPIs.swift; sourceTree = "<group>"; };
 		4EF7786C28100151004A9D0D /* PostDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetail.swift; sourceTree = "<group>"; };
 		4EF7786E281003BE004A9D0D /* PostListForUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListForUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB511BB280C5F7700BF670D /* TinyStore in Frameworks */,
+				4E578BE6281171A400F35067 /* TinyStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +63,9 @@
 		4EB511A8280C5F2D00BF670D /* UserListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				4EB511B7280C5F4300BF670D /* AppStore.swift */,
-				4EB511BC280C5F8E00BF670D /* UserListAPI.swift */,
-				4EB511BE280C5F9200BF670D /* PostAPIs.swift */,
+				4E578BE02811717800F35067 /* AppStore.swift */,
+				4E578BDF2811717800F35067 /* PostAPIs.swift */,
+				4E578BDE2811717800F35067 /* UserListAPI.swift */,
 				4EB511A9280C5F2D00BF670D /* UserListSwiftUIApp.swift */,
 				4EB511AB280C5F2D00BF670D /* ContentView.swift */,
 				4EF7786C28100151004A9D0D /* PostDetail.swift */,
@@ -101,7 +101,7 @@
 			);
 			name = UserListSwiftUI;
 			packageProductDependencies = (
-				4EB511BA280C5F7700BF670D /* TinyStore */,
+				4E578BE5281171A400F35067 /* TinyStore */,
 			);
 			productName = UserListSwiftUI;
 			productReference = 4EB511A6280C5F2D00BF670D /* UserListSwiftUI.app */;
@@ -132,7 +132,7 @@
 			);
 			mainGroup = 4EB5119D280C5F2D00BF670D;
 			packageReferences = (
-				4EB511B9280C5F7700BF670D /* XCRemoteSwiftPackageReference "TinyStore" */,
+				4E578BE4281171A400F35067 /* XCRemoteSwiftPackageReference "TinyStore" */,
 			);
 			productRefGroup = 4EB511A7280C5F2D00BF670D /* Products */;
 			projectDirPath = "";
@@ -160,12 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB511B8280C5F4300BF670D /* AppStore.swift in Sources */,
-				4EB511BD280C5F8E00BF670D /* UserListAPI.swift in Sources */,
+				4E578BE12811717800F35067 /* UserListAPI.swift in Sources */,
 				4EB511AC280C5F2D00BF670D /* ContentView.swift in Sources */,
+				4E578BE22811717800F35067 /* PostAPIs.swift in Sources */,
 				4EF7786F281003BE004A9D0D /* PostListForUser.swift in Sources */,
-				4EB511BF280C5F9200BF670D /* PostAPIs.swift in Sources */,
 				4EF7786D28100151004A9D0D /* PostDetail.swift in Sources */,
+				4E578BE32811717800F35067 /* AppStore.swift in Sources */,
 				4EB511AA280C5F2D00BF670D /* UserListSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,20 +369,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4EB511B9280C5F7700BF670D /* XCRemoteSwiftPackageReference "TinyStore" */ = {
+		4E578BE4281171A400F35067 /* XCRemoteSwiftPackageReference "TinyStore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:ReactComponentKit/TinyStore.git";
 			requirement = {
 				kind = upToNextMinorVersion;
-				minimumVersion = 0.0.3;
+				minimumVersion = 0.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4EB511BA280C5F7700BF670D /* TinyStore */ = {
+		4E578BE5281171A400F35067 /* TinyStore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4EB511B9280C5F7700BF670D /* XCRemoteSwiftPackageReference "TinyStore" */;
+			package = 4E578BE4281171A400F35067 /* XCRemoteSwiftPackageReference "TinyStore" */;
 			productName = TinyStore;
 		};
 /* End XCSwiftPackageProductDependency section */

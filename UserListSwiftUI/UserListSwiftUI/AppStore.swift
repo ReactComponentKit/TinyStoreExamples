@@ -32,18 +32,18 @@ struct AppStore {
         state(name: State.username, initialValue: "")
         
         effectValue(name: EffectValue.userList, initialValue: [User]()) { effect in
-            let api: Tiny.State<UserListAPI> = effect.watch(state: State.userListAPI)
-            let userList = await api.value.fetchUserList()
+            let api: UserListAPI = effect.watch(state: State.userListAPI)
+            let userList = await api.fetchUserList()
             return userList
         }
         
         effectValue(name: EffectValue.postList, initialValue: [Post]()) { effect in
-            let userList: Tiny.EffectValue<[User]> = effect.watch(effectValue: EffectValue.userList)
-            let api: Tiny.State<PostListAPI> = effect.watch(state: State.postListAPI)
-            let postList = await api.value.fetchPostList()
+            let userList: [User] = effect.watch(effectValue: EffectValue.userList)
+            let api: PostListAPI = effect.watch(state: State.postListAPI)
+            let postList = await api.fetchPostList()
             return postList.map { it in
                 var mutablePost = it
-                let user = userList.value.first { user in
+                let user = userList.first { user in
                     user.id == it.userId
                 }
                 mutablePost.userName = user?.name
@@ -52,19 +52,19 @@ struct AppStore {
         }
         
         let _: Tiny.EffectValue<Post?> = effectValue(name: EffectValue.postDetail, initialValue: nil) { effect in
-            let api: Tiny.State<PostDetailAPI> = effect.watch(state: State.postDetailAPI)
-            let postId: Tiny.State<Int> = effect.watch(state: State.postId)
+            let api: PostDetailAPI = effect.watch(state: State.postDetailAPI)
+            let postId: Int = effect.watch(state: State.postId)
             let userList: Tiny.EffectValue<[User]> = useEffectValue(name: EffectValue.userList)
-            var post = await api.value.fetchPostDetail(postId: postId.value)
+            var post = await api.fetchPostDetail(postId: postId)
             let userName = userList.value.filter { $0.id == post?.userId }.first?.name
             post?.userName = userName
             return post
         }
         
         effectValue(name: EffectValue.postListForUsername, initialValue: [Post]()) { effect in
-            let username: Tiny.State<String> = effect.watch(state: AppStore.State.username)
-            let postList: Tiny.EffectValue<[Post]> = effect.watch(effectValue: AppStore.EffectValue.postList)
-            return postList.value.filter { $0.userName == username.value }
+            let username: String = effect.watch(state: AppStore.State.username)
+            let postList: [Post] = effect.watch(effectValue: AppStore.EffectValue.postList)
+            return postList.filter { $0.userName == username }
         }
     }
 }
