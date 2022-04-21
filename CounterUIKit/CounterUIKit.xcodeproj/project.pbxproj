@@ -13,8 +13,8 @@
 		4E44110E28084700008335D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E44110C28084700008335D7 /* Main.storyboard */; };
 		4E44111028084701008335D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E44110F28084701008335D7 /* Assets.xcassets */; };
 		4E44111328084701008335D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E44111128084701008335D7 /* LaunchScreen.storyboard */; };
-		4E44111C2808473B008335D7 /* TinyStore in Frameworks */ = {isa = PBXBuildFile; productRef = 4E44111B2808473B008335D7 /* TinyStore */; };
 		4E441121280847D0008335D7 /* AppStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E441120280847D0008335D7 /* AppStates.swift */; };
+		4E578BDA28116FC500F35067 /* TinyStore in Frameworks */ = {isa = PBXBuildFile; productRef = 4E578BD928116FC500F35067 /* TinyStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E44111C2808473B008335D7 /* TinyStore in Frameworks */,
+				4E578BDA28116FC500F35067 /* TinyStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +97,7 @@
 			);
 			name = CounterUIKit;
 			packageProductDependencies = (
-				4E44111B2808473B008335D7 /* TinyStore */,
+				4E578BD928116FC500F35067 /* TinyStore */,
 			);
 			productName = CounterUIKit;
 			productReference = 4E44110328084700008335D7 /* CounterUIKit.app */;
@@ -128,7 +128,7 @@
 			);
 			mainGroup = 4E4410FA28084700008335D7;
 			packageReferences = (
-				4E44111A2808473B008335D7 /* XCRemoteSwiftPackageReference "TinyStore" */,
+				4E578BD828116FC500F35067 /* XCRemoteSwiftPackageReference "TinyStore" */,
 			);
 			productRefGroup = 4E44110428084700008335D7 /* Products */;
 			projectDirPath = "";
@@ -380,20 +380,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4E44111A2808473B008335D7 /* XCRemoteSwiftPackageReference "TinyStore" */ = {
+		4E578BD828116FC500F35067 /* XCRemoteSwiftPackageReference "TinyStore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:ReactComponentKit/TinyStore.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4E44111B2808473B008335D7 /* TinyStore */ = {
+		4E578BD928116FC500F35067 /* TinyStore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4E44111A2808473B008335D7 /* XCRemoteSwiftPackageReference "TinyStore" */;
+			package = 4E578BD828116FC500F35067 /* XCRemoteSwiftPackageReference "TinyStore" */;
 			productName = TinyStore;
 		};
 /* End XCSwiftPackageProductDependency section */

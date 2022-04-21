@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var countLabel: UILabel!
     
+    @UseState(name: AppStates.count)
+    var count: Tiny.State<Int>
     var cancellables = Set<AnyCancellable>()
-    var count: Tiny.State<Int> = useState(name: AppStates.count)
     
     override func viewDidLoad() {
         super.viewDidLoad()

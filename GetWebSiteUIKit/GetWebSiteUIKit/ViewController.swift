@@ -10,10 +10,12 @@ import Combine
 import TinyStore
 
 class ViewController: UIViewController {
-    
-    var content: Tiny.State<Async<String>> = useState(name: AppState.content)
-    var url: Tiny.State<String> = useState(name: AppState.url)
-    var effect: Tiny.VoidEffect = useEffect(name: AppEffect.fetchSite)
+    @UseState(name: AppState.content)
+    var content: Tiny.State<Async<String>>
+    @UseState(name: AppState.url)
+    var url: Tiny.State<String>
+    @UseEffect(name: AppEffect.fetchSite)
+    var effect: Tiny.Effect
     var cancellables = Set<AnyCancellable>()
     
     @IBOutlet weak var textView: UITextView!

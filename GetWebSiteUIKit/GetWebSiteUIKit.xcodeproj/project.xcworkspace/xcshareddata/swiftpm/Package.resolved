@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:ReactComponentKit/TinyStore.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "c26cad625ddfd98ef6aae6a4c9eca48b56972789"
+        "revision" : "f40a071bade5bbc5f798dce7cd5ce98382a09c70",
+        "version" : "0.0.4"
       }
     }
   ],

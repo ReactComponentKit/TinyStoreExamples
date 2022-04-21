@@ -24,10 +24,10 @@ func defineAppStates() {
 
 func defineAppEffects() {
     effect(name: AppEffect.fetchSite) { effect in
-        let urlString: Tiny.State<String> = effect.watch(state: AppState.url)
+        let urlString: String = effect.watch(state: AppState.url)
         let content: Tiny.State<Async<String>> = useState(name: AppState.content)
 
-        guard let url = URL(string: urlString.value) else { return }
+        guard let url = URL(string: urlString) else { return }
         do {
             content.commit { $0 = .loading }
             let (data, _) = try await URLSession.shared.data(from: url)
